@@ -127,9 +127,11 @@ document.write('<br>' + 'Task-12 - ' + arr_Exsercise_12.join(''));
 
 let arr_Exsercise_13_First_Way = [];
 
-for (let i = 0; i <= 4; i++) {
-	arr_Exsercise_13_First_Way[i] = i + 1;
-}
+arr_Exsercise_13_First_Way[0] = 1;
+arr_Exsercise_13_First_Way[1] = 2;
+arr_Exsercise_13_First_Way[2] = 3;
+arr_Exsercise_13_First_Way[3] = 4;
+arr_Exsercise_13_First_Way[4] = 5;
 
 
 //Другий спосiб
@@ -159,13 +161,11 @@ document.write('<br>' + 'Task-16 - ' + arr_Exsercise_16.join(' '));
 
 //17. Сделайте так, чтобы из массива который вы создали выше вывелись все нечетные числа в параграфе, а четные в спане с красным фоном.
 
-for (let j of arr_Exsercise_16) {
-	if (arr_Exsercise_16[j] % 2 !== 0) {
-		document.write('<p>' + j + '---');
-		console.log(j);
-	} 
-	else {
-		document.write('<span style=background-color:red>' + j);
+for (let i = 1; i < arr_Exsercise_16.length; i++) {
+	if (arr_Exsercise_16[i] % 2 !== 0) {
+		document.write('<p>' + i + '---');
+	} else {
+		document.write('<span style=background-color:red>' + i);
 	}
 }
 
